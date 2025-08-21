@@ -4,7 +4,7 @@ This is a custom Android keyboard I built for a technical assessment. It replace
 
 ### How It Works
 
-The workflow is designed to be simple and intuitive. [cite_start]You press and hold the button to start recording audio, and it continues for as long as you hold it down[cite: 10, 11]. [cite_start]The moment you release the button, the recording stops immediately[cite: 11]. [cite_start]The app then sends the complete audio file—not a live stream—to Groq's Whisper API for transcription[cite: 12, 36]. [cite_start]Once the text comes back, it's automatically inserted wherever your cursor is[cite: 13, 31]. [cite_start]The button provides visual feedback throughout the process so you know if it's recording, processing, or done[cite: 14].
+The workflow is designed to be simple and intuitive. You press and hold the button to start recording audio, and it continues for as long as you hold it down. The moment you release the button, the recording stops immediately. The app then sends the complete audio file—not a live stream—to Groq's Whisper API for transcription. Once the text comes back, it's automatically inserted wherever your cursor is. The button provides visual feedback throughout the process so you know if it's recording, processing, or done.
 
 ### Setup and Implementation Guide
 
@@ -28,4 +28,3 @@ Getting this project running on your own device is straightforward.
 5.  **Use It!** Open any app with a text field. When the keyboard appears, tap the small keyboard icon (usually in the bottom-right corner) and switch your input method to the **Java Voice Keyboard**. Now you're all set to press and hold the button to type with your voice!
 
 **Tech Used:** This was built natively for Android using **Java**. It uses Android's `InputMethodService` for the keyboard functionality, `MediaRecorder` for audio capture, and **Retrofit** to communicate with the **Groq Whisper API**.
-
